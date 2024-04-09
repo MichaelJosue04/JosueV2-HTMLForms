@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Food cart ng masa!</title>
+</head>
+<body>
+ <center><img src="logo.png" alt="Josue" height="200" width="200"/>
+    <form action='' method='get' class='name-form'>
+        <div class='form-row'>
+            <label for='full-name'>Name</label>
+            <input id='full-name' name='full-name' type='text'/>
+        </div>
+        <div class='form-row'>
+            <label for='email'>Email</label>
+            <input id='email'
+                    name='email'
+                    type='email'
+                    placeholder='@gmail.com'/>
+                    <br>
+                    <h4>Pick an Order!</h4>  
+   <center> <div id="dropdown">
+       
+        <button class="dropdown-toggle">
+            <span>Menu</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Fishball</a></li>
+            <li class="menu-item"><a href="#">Kikiam</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Drinks</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Sago't Gulaman</a></li>
+                    <li class="submenu-item"><a href="#">Red Tea</a></li>
+                    <li class="submenu-item"><a href="#">Blue Lemonade</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">Chickenballs</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Specials</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">French Fries</a></li>
+                    <li class="submenu-item"><a href="#">Cheese sticks</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div></center>
+    <script src='script.js'></script>
+    <br>
+    <div class="form-group">
+        <label for="payment">Mode of Payment:</label>
+        <input type="radio" id="cash" name="payment" value="cash" >
+        <label for="cash">Cash</label>
+        <input type="radio" id="card" name="payment" value="card" >
+        <label for="card">Card</label>
+    </div>
+    <div class="form-group">
+        <label for="orderType">Pick up or delivery</label>
+        <input type="radio" id="dineIn" name="orderType" value="dineIn">
+        <label for="dineIn">Pick up</label>
+        <input type="radio" id="takeOut" name="orderType" value="takeOut" >
+        <label for="takeOut">Delivery</label>
+    </div>
+    <div class="form-group">
+        <label for="comments">Comments or Instructions:</label>
+        <textarea id="comments" name="comments"></textarea>
+    </div>
+   
+   
+    
+    </form></div>
+        <br>
+        <button class="button" onclick="location.href='order2.html'">Place order!</button>
+       
+    
+        
+</body>
+</html>
